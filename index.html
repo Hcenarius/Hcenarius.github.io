@@ -75,7 +75,7 @@
         
         <div class="comments-link">
             
-            <a href="javascript:void(0);" data-url="http://yoursite.com/2022/07/23/leee/" data-id="cj5utnco100014srwgji051zy" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+            <a href="javascript:void(0);" data-url="http://yoursite.com/2022/07/23/leee/" data-id="cj5xslwj80000esrw5ellq35d" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -89,6 +89,135 @@
     <a href="/2022/07/23/leee/">
     <time datetime="2022-07-23T09:00:25.000Z" class="entry-date">
         2022-07-23
+    </time>
+</a>
+    
+    
+    </footer>
+</article>
+
+
+
+
+
+
+  
+    <article id="post-can" class="post-can post type-post status-publish format-standard hentry">
+    <!---->
+
+      <header class="entry-header">
+        
+        
+  
+    <h1 class="entry-title">
+      <a class="article-title" href="/2016/08/04/can/">正则表达式</a>
+    </h1>
+  
+
+        
+        <div class="comments-link">
+            
+            <a href="javascript:void(0);" data-url="http://yoursite.com/2016/08/04/can/" data-id="cj5xslwjg0002esrw9entkgwy" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+        </div><!-- .comments-link -->
+      </header><!-- .entry-header -->
+
+    <div class="entry-content">
+      
+        <h2 id="旁白"><a href="#旁白" class="headerlink" title="旁白"></a>旁白</h2><ul>
+<li>可能是用的不多吧，熟练度不够，以至于到用的时候经常忘记，就在这里记录一下吧</li>
+</ul>
+<h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><ul>
+<li>正则表达式，又叫规则表达式,可以这么理解:有一定规律的表达式</li>
+</ul>
+<h2 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h2><ul>
+<li>匹配字符串的</li>
+</ul>
+<h2 id="由基本的一些符号组合成的-这些符号叫-基本的元字符"><a href="#由基本的一些符号组合成的-这些符号叫-基本的元字符" class="headerlink" title="由基本的一些符号组合成的,这些符号叫:基本的元字符"></a>由基本的一些符号组合成的,这些符号叫:基本的元字符</h2><h3 id="元字符"><a href="#元字符" class="headerlink" title="元字符"></a>元字符</h3><pre><code>1.  . 表示的是除了\n以外的任意一个单个的字符
+2. []  表示的是一个范围 ,只能是一个
+3. [0-9] 表示的是所有的数字中 0到9之间的任意的一个数字(可以是0，也可以是9)
+4. [a-z] 表示的是字母a到字母z之间的所有的小写字母中一个
+5. [A-Z] 表示的是所有的大写的字母中的一个
+6. [a-zA-Z] 所有的字母中的一个
+7. [0-9a-zA-Z] 所有的数字和字母中的一个
+
+[.] 干掉了这个.原有的意义了   就是一个普通的点
+
+
+ |  或者
+[0-9]|[a-z]  要么是一个数字,要么是一个小写的字母
+[a]|[0-9]   要么是a要么是0到9之间的一个数字
+
+() 提升优先级,分组
+([a-z]|[0-9])[A-Z]
+(([a]|[1-6])([A-Z][5])) 有三组 从最左边开始计算
+()(())((()))
+</code></pre><h3 id="限定符"><a href="#限定符" class="headerlink" title="限定符"></a>限定符</h3><ol>
+<li>+这个符号前面的表达式最少出现1次,最多到无限次    [0-9][a-z]+   “4f”</li>
+<li><em>这个符号前面的表达式最少出现0次,最多到无限次  [a-zA-Z][2-9] </em>    “f9s”</li>
+<li><p>?  这个符号前面的表达式出现的次数是0次到1次</p>
+<pre><code>[0-9]?  &quot;45&quot;
+</code></pre></li>
+<li><p>{1,}  此时的大括号表示的是前面的表达式出现了1次到多次</p>
+</li>
+<li>{1,9} 表示前面的表达式出现了最少是1次,最多是9次   [2-8]{2,9}</li>
+<li><p>{0,1} 表示的是前面的表达式出现了最少0次，最多1次</p>
+<pre><code> \d   表示的是一个数字,相当于[0-9]
+ \D  表示的非数字
+
+ \s   空白符号                       &quot;   &quot;
+ \S   非空白符号
+ \w    非特殊符号 包括_
+ \W    特殊符号
+
+^   以什么开始   ^[0-9]    还有可以表示 取非   [^0-9]  非数字
+
+$   以什么结尾    [a-z]$   &quot;2dfssd&quot;
+^[0-9][a-z]$  严格模式的匹配    &quot;44444ufffff&quot;
+</code></pre><h2 id="例如"><a href="#例如" class="headerlink" title="例如"></a>例如</h2></li>
+</ol>
+<ul>
+<li>ip地址</li>
+<li>192.168.173.234</li>
+<li>(\d{3}[.]){3}\d{3} </li>
+</ul>
+<h2 id="正则表达式在页面中的使用"><a href="#正则表达式在页面中的使用" class="headerlink" title="正则表达式在页面中的使用"></a>正则表达式在页面中的使用</h2><h3 id="创建对象才能使用正则表达式"><a href="#创建对象才能使用正则表达式" class="headerlink" title="创建对象才能使用正则表达式"></a>创建对象才能使用正则表达式</h3><h3 id="两种方式创建正则表达式"><a href="#两种方式创建正则表达式" class="headerlink" title="两种方式创建正则表达式"></a>两种方式创建正则表达式</h3><ul>
+<li><ol>
+<li>通过调用构造函数创建对象<ul>
+<li>var reg=new RegExp(/正则表达式/);</li>
+</ul>
+</li>
+</ol>
+</li>
+<li><ol>
+<li>字面量的方式创建正则表达式对象<ul>
+<li>var reg=/正则表达式/;</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+<h2 id="例如-1"><a href="#例如-1" class="headerlink" title="例如"></a>例如</h2><h3 id="创建正则表达式对象"><a href="#创建正则表达式对象" class="headerlink" title="创建正则表达式对象"></a>创建正则表达式对象</h3><pre><code>var reg=new RegExp(/\d/);
+//调用方法,返回值是bool类型
+var flag= reg.test(&quot;10086&quot;);//判断这个正则表达式和字符串中的内容是否能够匹配
+console.log(flag);//true
+</code></pre><h3 id="字面量的方式创建正则表达式对象"><a href="#字面量的方式创建正则表达式对象" class="headerlink" title="字面量的方式创建正则表达式对象"></a>字面量的方式创建正则表达式对象</h3><pre><code>var reg=/[a-z]{1,3}/;
+var flag=reg.test(&quot;我好开森哦,jack,do you 开心吗&quot;);
+console.log(flag);
+</code></pre><h3 id="邮箱的正则表达式"><a href="#邮箱的正则表达式" class="headerlink" title="邮箱的正则表达式"></a>邮箱的正则表达式</h3><pre><code>shuaiYang131@126.com
+[0-9a-zA-Z_.-]+[@][0-9a-zA-Z_.]+([.][a-zA-Z]+){1,2}
+</code></pre><h3 id="qq的"><a href="#qq的" class="headerlink" title="qq的"></a>qq的</h3><p>   /^\d{5,12}$/);</p>
+<h3 id="手机"><a href="#手机" class="headerlink" title="手机"></a>手机</h3><pre><code>/^\d{11}$/);
+</code></pre><h3 id="邮箱"><a href="#邮箱" class="headerlink" title="邮箱"></a>邮箱</h3><pre><code>/^[0-9a-zA-Z_.-]+[@][0-9a-zA-Z_.-]+([.][a-zA-Z]+){1,2}$/);
+</code></pre><h3 id="座机"><a href="#座机" class="headerlink" title="座机"></a>座机</h3><pre><code>/^\d{3,4}[-]\d{7,8}$/);
+</code></pre><h3 id="姓名"><a href="#姓名" class="headerlink" title="姓名"></a>姓名</h3><pre><code>/^[\u4e00-\u9fa5]{2,6}$/);
+</code></pre><h3 id="汉字的正则是从一-到-龥-即：-u4e00-u9fa5"><a href="#汉字的正则是从一-到-龥-即：-u4e00-u9fa5" class="headerlink" title="汉字的正则是从一 到  龥  即：[\u4e00-\u9fa5]"></a>汉字的正则是从一 到  龥  即：[\u4e00-\u9fa5]</h3><h3 id="正则表达式后面如果有g出现-表示的是全局匹配"><a href="#正则表达式后面如果有g出现-表示的是全局匹配" class="headerlink" title="正则表达式后面如果有g出现,表示的是全局匹配"></a>正则表达式后面如果有g出现,表示的是全局匹配</h3>
+      
+    </div><!-- .entry-content -->
+
+    <footer class="entry-meta">
+    <a href="/2016/08/04/can/">
+    <time datetime="2016-08-04T00:40:05.000Z" class="entry-date">
+        2016-08-04
     </time>
 </a>
     
@@ -117,7 +246,7 @@
         
         <div class="comments-link">
             
-            <a href="javascript:void(0);" data-url="http://yoursite.com/2016/08/02/闭包的简单理解/" data-id="cj5utnco100004srwwmvh31h3" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+            <a href="javascript:void(0);" data-url="http://yoursite.com/2016/08/02/闭包的简单理解/" data-id="cj5xslwjm0003esrwn6zzgp08" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -189,7 +318,7 @@
         
         <div class="comments-link">
             
-            <a href="javascript:void(0);" data-url="http://yoursite.com/2016/06/02/基于基于Hexo和Github的博客/" data-id="cj5utnco100024srwom1j7pex" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+            <a href="javascript:void(0);" data-url="http://yoursite.com/2016/06/02/基于基于Hexo和Github的博客/" data-id="cj5xslwjd0001esrwm835wpdq" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -273,6 +402,10 @@
         
           <li>
             <a href="/2022/07/23/leee/">leee</a>
+          </li>
+        
+          <li>
+            <a href="/2016/08/04/can/">正则表达式</a>
           </li>
         
           <li>
