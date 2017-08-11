@@ -60,6 +60,48 @@
       <div id="main" class="wrapper">
         <div id="primary" class="site-content"><div id="content" role="main">
   
+    <article id="post-a" class="post-a post type-post status-publish format-standard hentry">
+    <!---->
+
+      <header class="entry-header">
+        
+        
+  
+    <h1 class="entry-title">
+      <a class="article-title" href="/2017/08/11/a/">a</a>
+    </h1>
+  
+
+        
+        <div class="comments-link">
+            
+            <a href="javascript:void(0);" data-url="http://yoursite.com/2017/08/11/a/" data-id="cj67l8aix00035orwogqyt3i0" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+        </div><!-- .comments-link -->
+      </header><!-- .entry-header -->
+
+    <div class="entry-content">
+      
+        
+      
+    </div><!-- .entry-content -->
+
+    <footer class="entry-meta">
+    <a href="/2017/08/11/a/">
+    <time datetime="2017-08-11T06:39:15.000Z" class="entry-date">
+        2017-08-11
+    </time>
+</a>
+    
+    
+    </footer>
+</article>
+
+
+
+
+
+
+  
     <article id="post-Javascript操作DOM常用API总结" class="post-Javascript操作DOM常用API总结 post type-post status-publish format-standard hentry">
     <!---->
 
@@ -75,7 +117,7 @@
         
         <div class="comments-link">
             
-            <a href="javascript:void(0);" data-url="http://yoursite.com/2017/08/11/Javascript操作DOM常用API总结/" data-id="cj67b5dc2000124rw28oirbtc" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+            <a href="javascript:void(0);" data-url="http://yoursite.com/2017/08/11/Javascript操作DOM常用API总结/" data-id="cj67l8aih00005orwkp2no8mc" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -323,7 +365,7 @@ element.id = &quot;test&quot;;
         
         <div class="comments-link">
             
-            <a href="javascript:void(0);" data-url="http://yoursite.com/2016/08/04/正则表达式/" data-id="cj67b5dc2000424rwbad2ejgo" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+            <a href="javascript:void(0);" data-url="http://yoursite.com/2016/08/04/正则表达式/" data-id="cj67l8aix00055orw07msipq5" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -452,7 +494,7 @@ console.log(flag);
         
         <div class="comments-link">
             
-            <a href="javascript:void(0);" data-url="http://yoursite.com/2016/08/02/闭包的简单理解/" data-id="cj67b5dc2000224rw837nn1br" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+            <a href="javascript:void(0);" data-url="http://yoursite.com/2016/08/02/闭包的简单理解/" data-id="cj67l8aix00045orwj2yg1zq7" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -524,17 +566,15 @@ console.log(flag);
         
         <div class="comments-link">
             
-            <a href="javascript:void(0);" data-url="http://yoursite.com/2016/07/23/Canvas 基础篇/" data-id="cj67b5dc2000324rwk7onhhha" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+            <a href="javascript:void(0);" data-url="http://yoursite.com/2016/07/23/Canvas 基础篇/" data-id="cj67l8aix00015orwv6g962ck" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
     <div class="entry-content">
       
         <h1 id="Canvas-基础篇"><a href="#Canvas-基础篇" class="headerlink" title="Canvas 基础篇"></a>Canvas 基础篇</h1><h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>canvas 是 HTML5 提供的一个用于展示绘图效果的标签. canvas 原意画布, 帆布. 在 HTML 页面中用于展示绘图效果. 最早 canvas 是苹果提出的一个方案, 今天已经在大多数浏览器中实现.</p>
-<h2 id="基本用法"><a href="#基本用法" class="headerlink" title="基本用法"></a>基本用法</h2><h3 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h3><ul>
-<li><canvas></canvas></li>
-</ul>
-<ol>
+<h2 id="基本用法"><a href="#基本用法" class="headerlink" title="基本用法"></a>基本用法</h2><h3 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h3><pre><code>&lt;canvas&gt;&lt;/canvas&gt;
+</code></pre><ol>
 <li>使用 canvas 标签, 即可在页面中开辟一格区域. 可以设置其 width 和 height 设置该区域的尺寸.</li>
 <li>默认 canvas 的宽高为 300 和 150.</li>
 <li>不要使用 CSS 的方式设置宽高, 应该使用 HTML 属性.</li>
@@ -565,7 +605,68 @@ console.log(flag);
 </li>
 </ol>
 <h3 id="拿到绘制-3D-图形的绘图工具"><a href="#拿到绘制-3D-图形的绘图工具" class="headerlink" title="拿到绘制 3D 图形的绘图工具"></a>拿到绘制 3D 图形的绘图工具</h3><pre><code>canvas.getContext( &apos;webgl&apos; )
-</code></pre><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div></pre></td><td class="code"><pre><div class="line">    eg:</div><div class="line">    <span class="keyword">var</span> canvas = <span class="built_in">document</span>.createElement( <span class="string">'canvas'</span> );</div><div class="line">    canvas.width = <span class="number">500</span>;</div><div class="line">    canvas.height = <span class="number">400</span>;</div><div class="line">    canvas.style.border = <span class="string">'1px dashed red'</span>;</div><div class="line">    <span class="built_in">document</span>.body.appendChild( canvas );</div><div class="line">    <span class="comment">// 获得 CanvasRenderingContext2D 对象</span></div><div class="line">    <span class="keyword">var</span> context = canvas.getContext( <span class="string">'2d'</span> );</div><div class="line">    <span class="comment">// 设置 起点</span></div><div class="line">    context.moveTo( <span class="number">0</span>, <span class="number">0</span> );</div><div class="line">    <span class="comment">// 绘制直线</span></div><div class="line">    context.lineTo( <span class="number">500</span>, <span class="number">400</span> );</div><div class="line">    <span class="comment">// 设置 起点</span></div><div class="line">    context.moveTo( <span class="number">0</span>, <span class="number">400</span> );</div><div class="line">    <span class="comment">// 绘制直线</span></div><div class="line">    context.lineTo( <span class="number">500</span>, <span class="number">0</span> );</div><div class="line">    <span class="comment">// 描边显示效果</span></div><div class="line">    context.stroke();</div><div class="line"><span class="string">``</span><span class="string">`    </span></div><div class="line">### 效果如下：</div><div class="line"></div><div class="line">![插入图片](E:/就业班资料/Canvas/Canvas讲义/imgs/2016-08-06_015256.png)</div><div class="line">#### 其中</div><div class="line">1. context.moveTo( x, y )      落笔的方法</div><div class="line">2. context.lineTo( x, y )      绘制到的方法( 绘制直线的 )</div><div class="line">3. context.stroke()            描线的方法</div><div class="line"></div><div class="line"></div><div class="line">    canvas 绘图与我们用笔绘图类似但又不完全相同</div><div class="line">    我们用 canvas 绘制好比你在告诉一个蒙着眼睛的人怎么绘图. 必须明确的高速它 从哪里到哪里怎么样.</div><div class="line">    canvas 绘图还与我们绘图有一点不同, 它是先描点, 再连线.</div><div class="line">## canvas 的坐标系</div><div class="line">    在计算机中, 绘制图形的时候凡是使用的坐标系, 基本上都是左手坐标系.</div><div class="line">    原点在画布的左上角.</div><div class="line">    x 轴水平向右为正.</div><div class="line">    y 轴垂直向下为正.</div><div class="line">## 遇到的一些问题</div><div class="line">1. 绘制的时候, 每次绘制新的内容的时候, 绘制出来的结果会变粗.</div><div class="line"></div><div class="line"></div><div class="line">    这个实际上是 canvas 的绘图机制所造成. 在 canvas 中绘图, 采用的单路径绘制( 单图层绘制 )</div><div class="line">    我们每次在绘制的时候, 其实都是在同一个图层绘制内容, 而我们在调用 stroke 的时候, </div><div class="line">    是当前该图层中的点描起来.</div><div class="line">    * 在绘制同一个层图形的时候, 应该只在最后一次进行绘制描点</div><div class="line">2. 怎么创建新的图层</div><div class="line"></div><div class="line"></div><div class="line">    实际上在启用 canvas 的时候, 浏览器默认会创建一个图层. 好比打开画图板, </div><div class="line">    记事本都会有一个默认的文件一样. 如果需要创建新的图层使用:</div><div class="line"></div><div class="line">        context.beginPath();</div><div class="line"></div><div class="line">    调用该方法即会创建新的图层, 注意以前的图层就无法访问了.</div><div class="line">3. 为什么线会变灰</div><div class="line"></div><div class="line">    也是和 canvas 绘图的机制有关. 默认的 canvas 绘图采用的是 线宽为 1 像素, 颜色为纯黑色.</div><div class="line"></div><div class="line">    实际上 canvas 在绘制水平或垂直线的时候, 如果绘制的线宽是 1, 实际上绘制了 2 个像素的线宽.</div><div class="line"></div><div class="line">    是在绘制的直线上下或左右两端各延展一个像素, 然后颜色降半.  </div><div class="line"></div><div class="line">    要设置线宽使用 context.lineWidth = 数字</div><div class="line">    在 canvas 绘制的原理上是同图层一次性描点连线. 所以一旦设置了线宽, 就需要重新开启新图层绘制.</div><div class="line"></div><div class="line">    * 如果绘制图片的时候要更换颜色, 是一样的</div><div class="line"></div><div class="line">    如果在绘制直线的时候, 设置线宽为 2, 那么也是在直线两端各延展 1 像素, 颜色刚好, 不用降半.</div><div class="line"></div><div class="line">    如果在绘制直线的时候, 设置线宽为 3 像素. 实际就是在线的两端各延展 1.5 个像素. </div><div class="line">    但是 1 个像素是黑的. 没问题. 0.5 像素是不够的, 因此会自动补全 1 像素, 颜色降半.</div><div class="line">   </div><div class="line">    * 绘制直线中, 先的位置一定在绘制线的中间.</div><div class="line">4. 在绘制闭合图形的时候, 如果线宽较大, 会出现闭合的问题.</div><div class="line">    一般闭合就不在使用连线的方式实现了, 而采用 </div><div class="line"></div><div class="line">        context.closePath()</div><div class="line"></div><div class="line">     这个方法来实现. </div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line">### 一些线性的相关属性</div><div class="line">* Context2D.lineWidth 设置线宽.</div><div class="line">* Context2D.lineCap 设置线末端类型.</div><div class="line">* Context2D.lineJoin 设置相交线的拐点.</div><div class="line">* Context2D.getLineDash() 获得线段样式数组.</div><div class="line">* Context2D.setLineDash() 设置线段样式.</div><div class="line">* Context2D.lineDashOffset 绘制线段偏移量.</div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line">## 绘制曲线</div><div class="line">* 所谓的曲线实际上就是很多间距很小的直线连接起来构成曲线</div><div class="line">    可以考虑绘制初中学习 二次函数 y = x^2</div><div class="line">`<span class="string">``</span>js</div><div class="line">x 的取值范围是 <span class="number">0</span> 到 <span class="number">600</span>, y 的取值是 <span class="number">0</span> 到 <span class="number">400</span></div><div class="line">    估计一下, x^<span class="number">2</span> 最大值为 <span class="number">400</span>, x 的最大值是 <span class="number">20</span>, 也就是说绘制的时候, x 取 <span class="number">0</span> 到 <span class="number">20</span> 像素</div><div class="line">      <span class="keyword">for</span> ( <span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="number">21</span>; i++ ) &#123;</div><div class="line">        <span class="keyword">var</span> x = i;</div><div class="line">        <span class="keyword">var</span> y = x * x;</div><div class="line">      &#125;</div></pre></td></tr></table></figure>
+</code></pre><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">eg:</div><div class="line"><span class="keyword">var</span> canvas = <span class="built_in">document</span>.createElement( <span class="string">'canvas'</span> );</div><div class="line">canvas.width = <span class="number">500</span>;</div><div class="line">canvas.height = <span class="number">400</span>;</div><div class="line">canvas.style.border = <span class="string">'1px dashed red'</span>;</div><div class="line"><span class="built_in">document</span>.body.appendChild( canvas );</div><div class="line"><span class="comment">// 获得 CanvasRenderingContext2D 对象</span></div><div class="line"><span class="keyword">var</span> context = canvas.getContext( <span class="string">'2d'</span> );</div><div class="line"><span class="comment">// 设置 起点</span></div><div class="line">context.moveTo( <span class="number">0</span>, <span class="number">0</span> );</div><div class="line"><span class="comment">// 绘制直线</span></div><div class="line">context.lineTo( <span class="number">500</span>, <span class="number">400</span> );</div><div class="line"><span class="comment">// 设置 起点</span></div><div class="line">context.moveTo( <span class="number">0</span>, <span class="number">400</span> );</div><div class="line"><span class="comment">// 绘制直线</span></div><div class="line">context.lineTo( <span class="number">500</span>, <span class="number">0</span> );</div><div class="line"><span class="comment">// 描边显示效果</span></div><div class="line">context.stroke();</div></pre></td></tr></table></figure>
+<h3 id="效果如下："><a href="#效果如下：" class="headerlink" title="效果如下："></a>效果如下：</h3><p><img src="https://raw.githubusercontent.com/Hcenarius/images/91c3547a22a6d55a7295a33a7562c9c7f10e6064/2016-08-06_015256.png" alt="插入图片"></p>
+<h4 id="其中"><a href="#其中" class="headerlink" title="其中"></a>其中</h4><ol>
+<li>context.moveTo( x, y )      落笔的方法</li>
+<li>context.lineTo( x, y )      绘制到的方法( 绘制直线的 )</li>
+<li>context.stroke()            描线的方法</li>
+</ol>
+<pre><code>canvas 绘图与我们用笔绘图类似但又不完全相同
+我们用 canvas 绘制好比你在告诉一个蒙着眼睛的人怎么绘图. 必须明确的高速它 从哪里到哪里怎么样.
+canvas 绘图还与我们绘图有一点不同, 它是先描点, 再连线.
+</code></pre><h2 id="canvas-的坐标系"><a href="#canvas-的坐标系" class="headerlink" title="canvas 的坐标系"></a>canvas 的坐标系</h2><pre><code>在计算机中, 绘制图形的时候凡是使用的坐标系, 基本上都是左手坐标系.
+原点在画布的左上角.
+x 轴水平向右为正.
+y 轴垂直向下为正.
+</code></pre><h2 id="遇到的一些问题"><a href="#遇到的一些问题" class="headerlink" title="遇到的一些问题"></a>遇到的一些问题</h2><ol>
+<li>绘制的时候, 每次绘制新的内容的时候, 绘制出来的结果会变粗.</li>
+</ol>
+<pre><code>这个实际上是 canvas 的绘图机制所造成. 在 canvas 中绘图, 采用的单路径绘制( 单图层绘制 )
+我们每次在绘制的时候, 其实都是在同一个图层绘制内容, 而我们在调用 stroke 的时候, 
+是当前该图层中的点描起来.
+</code></pre><p>在绘制同一个层图形的时候, 应该只在最后一次进行绘制描点</p>
+<ol>
+<li>怎么创建新的图层</li>
+</ol>
+<pre><code>实际上在启用 canvas 的时候, 浏览器默认会创建一个图层. 好比打开画图板, 
+记事本都会有一个默认的文件一样. 如果需要创建新的图层使用:
+
+    context.beginPath();
+
+调用该方法即会创建新的图层, 注意以前的图层就无法访问了.
+</code></pre><ol>
+<li><p>为什么线会变灰</p>
+<p> 也是和 canvas 绘图的机制有关. 默认的 canvas 绘图采用的是 线宽为 1 像素, 颜色为纯黑色.</p>
+<p> 实际上 canvas 在绘制水平或垂直线的时候, 如果绘制的线宽是 1, 实际上绘制了 2 个像素的线宽.</p>
+<p> 是在绘制的直线上下或左右两端各延展一个像素, 然后颜色降半.  </p>
+<p> 要设置线宽使用 context.lineWidth = 数字<br> 在 canvas 绘制的原理上是同图层一次性描点连线. 所以一旦设置了线宽, 就需要重新开启新图层绘制.</p>
+<ul>
+<li><p>如果绘制图片的时候要更换颜色, 是一样的</p>
+<p>如果在绘制直线的时候, 设置线宽为 2, 那么也是在直线两端各延展 1 像素, 颜色刚好, 不用降半.</p>
+<p>如果在绘制直线的时候, 设置线宽为 3 像素. 实际就是在线的两端各延展 1.5 个像素.<br>但是 1 个像素是黑的. 没问题. 0.5 像素是不够的, 因此会自动补全 1 像素, 颜色降半.</p>
+</li>
+<li><p>绘制直线中, 先的位置一定在绘制线的中间.</p>
+</li>
+</ul>
+</li>
+<li><p>在绘制闭合图形的时候, 如果线宽较大, 会出现闭合的问题.<br> 一般闭合就不在使用连线的方式实现了, 而采用 </p>
+<pre><code>context.closePath()
+</code></pre><p>  这个方法来实现. </p>
+</li>
+</ol>
+<h3 id="一些线性的相关属性"><a href="#一些线性的相关属性" class="headerlink" title="一些线性的相关属性"></a>一些线性的相关属性</h3><ul>
+<li>Context2D.lineWidth 设置线宽.</li>
+<li>Context2D.lineCap 设置线末端类型.</li>
+<li>Context2D.lineJoin 设置相交线的拐点.</li>
+<li>Context2D.getLineDash() 获得线段样式数组.</li>
+<li>Context2D.setLineDash() 设置线段样式.</li>
+<li>Context2D.lineDashOffset 绘制线段偏移量.</li>
+</ul>
+<h2 id="绘制曲线"><a href="#绘制曲线" class="headerlink" title="绘制曲线"></a>绘制曲线</h2><ul>
+<li>所谓的曲线实际上就是很多间距很小的直线连接起来构成曲线<br>  可以考虑绘制初中学习 二次函数 y = x^2<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">x 的取值范围是 <span class="number">0</span> 到 <span class="number">600</span>, y 的取值是 <span class="number">0</span> 到 <span class="number">400</span></div><div class="line">    估计一下, x^<span class="number">2</span> 最大值为 <span class="number">400</span>, x 的最大值是 <span class="number">20</span>, 也就是说绘制的时候, x 取 <span class="number">0</span> 到 <span class="number">20</span> 像素</div><div class="line">      <span class="keyword">for</span> ( <span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="number">21</span>; i++ ) &#123;</div><div class="line">        <span class="keyword">var</span> x = i;</div><div class="line">        <span class="keyword">var</span> y = x * x;</div><div class="line">      &#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
 <h3 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h3><ol>
 <li>如果希望图片胖一点, 可以将 x 的值缩小( 是计算的值 ), x 缩小多少倍, 表示计算的 x 取值要扩大多少倍</li>
 <li>如果希望图片往左移动, 即 x 负方向, 就将 x 的就算值 加上一个数字. 如果希望往右移动, 就让 x 减去一个数字.<pre><code>一旦出现 计算中 的 x 减去一个数字以后, 我们 x 的取值范围需要变化.
@@ -633,7 +734,7 @@ console.log(flag);
         
         <div class="comments-link">
             
-            <a href="javascript:void(0);" data-url="http://yoursite.com/2016/06/02/基于基于Hexo和Github的博客/" data-id="cj67b5dbn000024rw8d0egmzj" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+            <a href="javascript:void(0);" data-url="http://yoursite.com/2016/06/02/基于基于Hexo和Github的博客/" data-id="cj67l8aix00025orw3j61ccgb" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -716,6 +817,10 @@ console.log(flag);
       <ul>
         
           <li>
+            <a href="/2017/08/11/a/">a</a>
+          </li>
+        
+          <li>
             <a href="/2017/08/11/Javascript操作DOM常用API总结/">Javascript操作DOM常用API总结</a>
           </li>
         
@@ -729,10 +834,6 @@ console.log(flag);
         
           <li>
             <a href="/2016/07/23/Canvas 基础篇/">Canvas 基础篇</a>
-          </li>
-        
-          <li>
-            <a href="/2016/06/02/基于基于Hexo和Github的博客/">基于Hexo和Github的博客</a>
           </li>
         
       </ul>
